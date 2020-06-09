@@ -62,7 +62,7 @@ Once you are done with that then i will be able to build your project and so fur
 I hope you understand that! Although everything else is looking as perfect as it should be but since i cannot install all the required packages i cannot be sure and proceed further!
 
 - You can group methods from the same module like so:
-
+```python
 from flask import (
 Flask,
 render_template,
@@ -71,9 +71,9 @@ flash,
 redirect,
 url_for
 )
-
+```
 - You can also use the lambda function as can be seen in the following code
-
+```python
 @app.route('/venues/<int:venue_id>')
 def show_venue(venue_id):
   # shows the venue page with the given venue_id
@@ -95,7 +95,7 @@ def show_venue(venue_id):
   data['upcoming_shows_count'] = len(upcoming_shows)
 
   return render_template('pages/show_venue.html', venue=data)
-  
+```  
  To see what error is being thrown, you may:
 
 `print(sys.exc_info())` in `create_venue_submission()`
@@ -156,7 +156,7 @@ duplicate_resource - 409
 - `format.py` add custom validators
 
 You can define custom validators which will be used in the form to validate the data as follows
-
+```python
 ##### CUSTOM VALIDATORS ######
 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
@@ -201,19 +201,21 @@ def DuplicateArtistName(form,field):
         from app import Artist
         if Artist.query.filter_by(name=field.data).first() != None :
             raise ValidationError('Artist name already existing in the database')
-            
+```            
  - Validate phone number
- You can also define a function as follows which will make sure that user is always entering a valid phone number!
+ 
+You can also define a function as follows which will make sure that user is always entering a valid phone number!
 
-# Implementation 1:
+Implementation 1:
+```python
 def validate_phone(self, phone):
         us_phone_num = '^([0-9]{3})[-][0-9]{3}[-][0-9]{4}$'
         match = re.search(us_phone_num, phone.data)
         if not match:
             raise ValidationError('Error, phone number must be in format xxx-xxx-xxxx')
-.
+```
 Alternative Implementation for the function validate_phone using the package phonenumbers
-
+```python
 def validate_phone(field):
     if len(field.data) != 10:
         raise ValidationError('Invalid phone number.')
@@ -221,18 +223,18 @@ def validate_phone(field):
         input_number = phonenumbers.parse(field.data)
         if not (phonenumbers.is_valid_number(input_number)):
 
-.
-
 phone = StringField(
         'phone',
         validators=[DataRequired(), validate_phone] 
     )
+ ```
 Similarly, you can define the function for validating genres!
 
 - `config.py`
 
 You can make a connection this way also by adding a class in the config.py and then importing the same. It gives a better idea of what is going on!
 
+```python
 import os
 SECRET_KEY = os.urandom(32)
 # Grabs the folder where the script runs.
@@ -252,4 +254,4 @@ class DatabaseURI:
     url = 'localhost:5432'
     SQLALCHEMY_DATABASE_URI = "postgres://{}:{}@{}/{}".format(
         username, password, url, DATABASE_NAME)
- 
+ ```
