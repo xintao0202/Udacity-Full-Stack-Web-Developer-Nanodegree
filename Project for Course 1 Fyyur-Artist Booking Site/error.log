@@ -1,0 +1,1165 @@
+
+2020-06-08 11:57:13,560 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:435]
+2020-06-08 11:57:13,585 INFO: errors [in app.py:435]
+2020-06-08 11:57:13,585 INFO: errors [in app.py:435]
+2020-06-08 11:58:58,467 ERROR: Exception on /shows [GET] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 367, in shows
+    data=Show.query.order_by(Show.start_time).all()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3319, in all
+    return list(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3481, in __iter__
+    return self._execute_and_instances(context)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3502, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3517, in _get_bind_args
+    return fn(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3496, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1138, in connection
+    return self._connection_for_bind(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1146, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2311, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2345, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\impl.py", line 128, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30 (Background on this error at: http://sqlalche.me/e/3o7r)
+2020-06-08 11:58:58,467 ERROR: Exception on /shows [GET] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 367, in shows
+    data=Show.query.order_by(Show.start_time).all()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3319, in all
+    return list(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3481, in __iter__
+    return self._execute_and_instances(context)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3502, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3517, in _get_bind_args
+    return fn(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3496, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1138, in connection
+    return self._connection_for_bind(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1146, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2311, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2345, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\impl.py", line 128, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30 (Background on this error at: http://sqlalche.me/e/3o7r)
+2020-06-08 11:59:12,536 ERROR: Exception on /artists [GET] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 211, in artists
+    data=Artist.query.order_by('id').all()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3319, in all
+    return list(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3481, in __iter__
+    return self._execute_and_instances(context)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3502, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3517, in _get_bind_args
+    return fn(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3496, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1138, in connection
+    return self._connection_for_bind(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1146, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2311, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2345, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\impl.py", line 128, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30 (Background on this error at: http://sqlalche.me/e/3o7r)
+2020-06-08 11:59:12,536 ERROR: Exception on /artists [GET] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 211, in artists
+    data=Artist.query.order_by('id').all()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3319, in all
+    return list(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3481, in __iter__
+    return self._execute_and_instances(context)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3502, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3517, in _get_bind_args
+    return fn(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\query.py", line 3496, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1138, in connection
+    return self._connection_for_bind(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 1146, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2311, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\engine\base.py", line 2345, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\pool\impl.py", line 128, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30 (Background on this error at: http://sqlalche.me/e/3o7r)
+2020-06-08 11:59:24,941 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:435]
+2020-06-08 11:59:24,966 INFO: errors [in app.py:435]
+2020-06-08 11:59:24,966 INFO: errors [in app.py:435]
+2020-06-08 12:00:33,129 ERROR: Exception on /venues/create [GET] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 144, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-06-08 12:00:33,129 ERROR: Exception on /venues/create [GET] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 144, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-06-08 12:05:29,778 ERROR: Exception on /venues/create [GET] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 144, in create_venue_form
+    @app.route('/venues/create', methods=['GET'])
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-06-08 12:05:29,778 ERROR: Exception on /venues/create [GET] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 144, in create_venue_form
+    @app.route('/venues/create', methods=['GET'])
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-06-08 12:09:35,277 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:436]
+2020-06-08 12:09:35,302 INFO: errors [in app.py:436]
+2020-06-08 12:09:35,302 INFO: errors [in app.py:436]
+2020-06-08 12:52:00,235 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:436]
+2020-06-08 12:52:00,260 INFO: errors [in app.py:436]
+2020-06-08 12:52:00,260 INFO: errors [in app.py:436]
+2020-06-08 12:58:51,012 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:436]
+2020-06-08 12:58:51,042 INFO: errors [in app.py:436]
+2020-06-08 12:58:51,042 INFO: errors [in app.py:436]
+2020-06-08 13:00:29,870 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:436]
+2020-06-08 13:00:29,904 INFO: errors [in app.py:436]
+2020-06-08 13:00:29,904 INFO: errors [in app.py:436]
+2020-06-08 13:02:32,941 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:436]
+2020-06-08 13:02:32,963 INFO: errors [in app.py:436]
+2020-06-08 13:02:32,963 INFO: errors [in app.py:436]
+2020-06-08 13:04:26,156 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:436]
+2020-06-08 13:04:26,188 INFO: errors [in app.py:436]
+2020-06-08 13:04:26,188 INFO: errors [in app.py:436]
+2020-06-08 13:15:23,543 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:436]
+2020-06-08 13:15:23,573 INFO: errors [in app.py:436]
+2020-06-08 13:15:23,573 INFO: errors [in app.py:436]
+2020-06-08 13:18:20,902 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:439]
+2020-06-08 13:18:20,925 INFO: errors [in app.py:439]
+2020-06-08 13:18:20,925 INFO: errors [in app.py:439]
+2020-06-08 13:18:39,440 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 27, in DuplicateVenueName
+    referer = request.headers.get("Referer")
+NameError: name 'request' is not defined
+2020-06-08 13:18:39,440 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 27, in DuplicateVenueName
+    referer = request.headers.get("Referer")
+NameError: name 'request' is not defined
+2020-06-08 13:21:16,834 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 27, in DuplicateVenueName
+    def DuplicateVenueName(form,field):
+NameError: name 'request' is not defined
+2020-06-08 13:21:16,834 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 27, in DuplicateVenueName
+    def DuplicateVenueName(form,field):
+NameError: name 'request' is not defined
+2020-06-08 13:21:34,298 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:439]
+2020-06-08 13:21:34,320 INFO: errors [in app.py:439]
+2020-06-08 13:21:34,320 INFO: errors [in app.py:439]
+2020-06-08 13:21:40,991 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 33, in DuplicateVenueName
+    from app import Venue
+ImportError: cannot import name 'Venue' from 'app' (C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py)
+2020-06-08 13:21:40,991 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 33, in DuplicateVenueName
+    from app import Venue
+ImportError: cannot import name 'Venue' from 'app' (C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py)
+2020-06-08 13:23:02,615 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 33, in DuplicateVenueName
+    else:
+ImportError: cannot import name 'Venue' from 'app' (C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py)
+2020-06-08 13:23:02,615 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 33, in DuplicateVenueName
+    else:
+ImportError: cannot import name 'Venue' from 'app' (C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py)
+2020-06-08 13:23:35,938 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:439]
+2020-06-08 13:23:35,960 INFO: errors [in app.py:439]
+2020-06-08 13:23:35,960 INFO: errors [in app.py:439]
+2020-06-08 13:23:41,805 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 64, in validate_genre
+    if option not in genres:
+NameError: name 'genres' is not defined
+2020-06-08 13:23:41,805 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 64, in validate_genre
+    if option not in genres:
+NameError: name 'genres' is not defined
+2020-06-08 13:25:26,957 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 64, in validate_genre
+    raise ValidationError('File extension is not an image')
+NameError: name 'genres' is not defined
+2020-06-08 13:25:26,957 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 64, in validate_genre
+    raise ValidationError('File extension is not an image')
+NameError: name 'genres' is not defined
+2020-06-08 13:25:37,420 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:439]
+2020-06-08 13:25:37,442 INFO: errors [in app.py:439]
+2020-06-08 13:25:37,442 INFO: errors [in app.py:439]
+2020-06-08 13:29:12,202 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:439]
+2020-06-08 13:29:12,235 INFO: errors [in app.py:439]
+2020-06-08 13:29:12,235 INFO: errors [in app.py:439]
+2020-06-08 13:38:45,579 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 13:38:45,599 INFO: errors [in app.py:440]
+2020-06-08 13:38:45,599 INFO: errors [in app.py:440]
+2020-06-08 13:38:53,229 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 188, in create_venue_submission
+    print (form.error)
+AttributeError: 'VenueForm' object has no attribute 'error'
+2020-06-08 13:38:53,229 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 188, in create_venue_submission
+    print (form.error)
+AttributeError: 'VenueForm' object has no attribute 'error'
+2020-06-08 13:43:34,405 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:439]
+2020-06-08 13:43:34,440 INFO: errors [in app.py:439]
+2020-06-08 13:43:34,440 INFO: errors [in app.py:439]
+2020-06-08 13:43:42,505 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+NameError: name 'form' is not defined
+2020-06-08 13:43:42,505 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+NameError: name 'form' is not defined
+2020-06-08 13:44:40,391 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:437]
+2020-06-08 13:44:40,415 INFO: errors [in app.py:437]
+2020-06-08 13:44:40,415 INFO: errors [in app.py:437]
+2020-06-08 13:44:46,700 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "app.py", line 162, in create_venue_submission
+    genres=venue_form.getlist('genres'),
+AttributeError: 'VenueForm' object has no attribute 'getlist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 170, in create_venue_submission
+    except expression:
+NameError: name 'expression' is not defined
+2020-06-08 13:44:46,700 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "app.py", line 162, in create_venue_submission
+    genres=venue_form.getlist('genres'),
+AttributeError: 'VenueForm' object has no attribute 'getlist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 170, in create_venue_submission
+    except expression:
+NameError: name 'expression' is not defined
+2020-06-08 13:45:40,730 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:439]
+2020-06-08 13:45:40,751 INFO: errors [in app.py:439]
+2020-06-08 13:45:40,751 INFO: errors [in app.py:439]
+2020-06-08 13:47:23,909 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 13:47:23,930 INFO: errors [in app.py:440]
+2020-06-08 13:47:23,930 INFO: errors [in app.py:440]
+2020-06-08 13:47:28,408 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 188, in create_venue_submission
+    traceback.print_exc()
+NameError: name 'traceback' is not defined
+2020-06-08 13:47:28,408 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 188, in create_venue_submission
+    traceback.print_exc()
+NameError: name 'traceback' is not defined
+2020-06-08 13:47:59,349 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:441]
+2020-06-08 13:47:59,372 INFO: errors [in app.py:441]
+2020-06-08 13:47:59,372 INFO: errors [in app.py:441]
+2020-06-08 13:50:36,932 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:439]
+2020-06-08 13:50:36,954 INFO: errors [in app.py:439]
+2020-06-08 13:50:36,954 INFO: errors [in app.py:439]
+2020-06-08 13:55:15,278 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 13:55:15,301 INFO: errors [in app.py:440]
+2020-06-08 13:55:15,301 INFO: errors [in app.py:440]
+2020-06-08 14:03:28,305 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 14:03:28,329 INFO: errors [in app.py:440]
+2020-06-08 14:03:28,329 INFO: errors [in app.py:440]
+2020-06-08 14:06:44,660 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 14:06:44,688 INFO: errors [in app.py:440]
+2020-06-08 14:06:44,688 INFO: errors [in app.py:440]
+2020-06-08 14:08:39,978 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 14:08:40,000 INFO: errors [in app.py:440]
+2020-06-08 14:08:40,000 INFO: errors [in app.py:440]
+2020-06-08 14:08:46,448 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 88, in validate_genre
+    flash(option)
+NameError: name 'flash' is not defined
+2020-06-08 14:08:46,448 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 88, in validate_genre
+    flash(option)
+NameError: name 'flash' is not defined
+2020-06-08 14:09:03,370 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 88, in validate_genre
+    flash(option)
+NameError: name 'flash' is not defined
+2020-06-08 14:09:03,370 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 88, in validate_genre
+    flash(option)
+NameError: name 'flash' is not defined
+2020-06-08 14:09:09,668 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 14:09:09,697 INFO: errors [in app.py:440]
+2020-06-08 14:09:09,697 INFO: errors [in app.py:440]
+2020-06-08 14:10:09,752 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 14:10:09,774 INFO: errors [in app.py:440]
+2020-06-08 14:10:09,774 INFO: errors [in app.py:440]
+2020-06-08 14:13:37,977 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 14:13:38,000 INFO: errors [in app.py:440]
+2020-06-08 14:13:38,000 INFO: errors [in app.py:440]
+2020-06-08 14:16:54,113 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 14:16:54,136 INFO: errors [in app.py:440]
+2020-06-08 14:16:54,136 INFO: errors [in app.py:440]
+2020-06-08 14:17:07,968 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 84, in validate_phone
+    match = re.search(us_phone_num, field.data)
+NameError: name 're' is not defined
+2020-06-08 14:17:07,968 ERROR: Exception on /venues/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 154, in create_venue_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 84, in validate_phone
+    match = re.search(us_phone_num, field.data)
+NameError: name 're' is not defined
+2020-06-08 14:18:59,256 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 14:18:59,283 INFO: errors [in app.py:440]
+2020-06-08 14:18:59,283 INFO: errors [in app.py:440]
+2020-06-08 14:19:55,283 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:440]
+2020-06-08 14:19:55,308 INFO: errors [in app.py:440]
+2020-06-08 14:19:55,308 INFO: errors [in app.py:440]
+2020-06-08 14:25:25,502 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:449]
+2020-06-08 14:25:25,530 INFO: errors [in app.py:449]
+2020-06-08 14:25:25,530 INFO: errors [in app.py:449]
+2020-06-08 14:25:47,344 ERROR: Exception on /artists/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 333, in create_artist_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 76, in DuplicateArtistName
+    from app import Artist
+ImportError: cannot import name 'Artist' from 'app' (C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py)
+2020-06-08 14:25:47,344 ERROR: Exception on /artists/create [POST] [in C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 333, in create_artist_submission
+    if form.validate_on_submit():
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\Xin Tao\AppData\Local\Programs\Python\Python38-32\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\forms.py", line 76, in DuplicateArtistName
+    from app import Artist
+ImportError: cannot import name 'Artist' from 'app' (C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py)
+2020-06-08 14:27:00,896 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:449]
+2020-06-08 14:27:00,918 INFO: errors [in app.py:449]
+2020-06-08 14:27:00,918 INFO: errors [in app.py:449]
+2020-06-08 14:29:55,129 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:449]
+2020-06-08 14:29:55,157 INFO: errors [in app.py:449]
+2020-06-08 14:29:55,157 INFO: errors [in app.py:449]
+2020-06-08 14:34:10,802 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:449]
+2020-06-08 14:34:10,824 INFO: errors [in app.py:449]
+2020-06-08 14:34:10,824 INFO: errors [in app.py:449]
+2020-06-08 14:34:37,000 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:449]
+2020-06-08 14:34:37,024 INFO: errors [in app.py:449]
+2020-06-08 14:34:37,024 INFO: errors [in app.py:449]
+2020-06-08 14:37:17,725 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:449]
+2020-06-08 14:37:17,748 INFO: errors [in app.py:449]
+2020-06-08 14:37:17,748 INFO: errors [in app.py:449]
+2020-06-08 14:38:55,985 INFO: errors [in C:\Users\Xin Tao\Documents\Study\Full Stack Web Developer Project\Project 1 Fyyur-Artist Booking Site\app.py:449]
+2020-06-08 14:38:56,011 INFO: errors [in app.py:449]
+2020-06-08 14:38:56,011 INFO: errors [in app.py:449]
